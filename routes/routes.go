@@ -57,11 +57,11 @@ func runAllRoutes(r *gin.Engine) {
 	r.GET("/", Check)
 	r.GET("/ping", Ping)
 
-	r.POST("/info")
-	r.GET("/info")
+	r.POST("/info", controller.AddNewOrderInfo)
 
-	r.POST("/admin/auth")
-	r.GET("/admin/info")
+	r.POST("/auth", controller.SingIn)
+	api := r.Group("/api", controller.UserIdentity)
+	api.GET("/info", controller.GetAllInfo)
 }
 
 func Check(c *gin.Context) {
