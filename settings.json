@@ -1,0 +1,15 @@
+{
+  "app": {
+    "server_name": "localhost",
+    "port_run": "5555",
+    "server_url": "127.0.0.1",
+    "log_file": "./logs/gin.log"
+  },
+  "postgres_params": {
+    "host": "ec2-18-235-154-252.compute-1.amazonaws.com",
+    "port": "5432",
+    "user": "obktylemltwdzc",
+    "password": "3492ecaa68258e934a6b71d0fa502f99d45ce6c159a588a403dbdd789aeedf84",
+    "database": "ddgndiu11pio51"
+  }
+}
